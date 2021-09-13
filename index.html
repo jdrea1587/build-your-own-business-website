@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Josh's restaurant</h1>
+    <h2>a Vegan eatery</h2>
+    <div class="first">
+      <p>special recipe wings <span class="price">$14</span><br />
+      <small>seitan "wings" with our vegan ranch & celery. bbq or spicy buffalo style </small></p>
+    </div>
+    
+    <div class="second">
+      <p>truffle mushroom lentil loaf<span class="price">$22</span><br />
+      <small>A soul-warming blend of mushroom and lentil casserole topped with a white truffle mushroom sauce. Served with sautéed vegetables and roasted potatoes. GF</small></p>
+    </div>
+      
+    <div class="dessert">
+      <p>carrot cake <span class="price">$8</span><br />
+      <small>Cinnamon layer cake with raisins, walnuts, and vegan cream cheese frosting.</small></p>
+    </div>
+    
+    <script>
+      $('div').on('click', function() {
+          $(this).toggleClass('show-description');
+      });
+    </script>
+    
+    </body>
+</html>
